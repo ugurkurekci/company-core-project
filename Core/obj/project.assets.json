@@ -1045,11 +1045,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ugurk\\Desktop\\Company\\CompanyProject\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\ugurk\\Documents\\GitHub\\CompanyProject\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\ugurk\\Desktop\\Company\\CompanyProject\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\ugurk\\Documents\\GitHub\\CompanyProject\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\ugurk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ugurk\\Desktop\\Company\\CompanyProject\\Core\\obj\\",
+      "outputPath": "C:\\Users\\ugurk\\Documents\\GitHub\\CompanyProject\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
