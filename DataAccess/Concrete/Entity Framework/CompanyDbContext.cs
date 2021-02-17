@@ -18,6 +18,7 @@ namespace DataAccess.Concrete.Entity_Framework
         public DbSet<Authorized> Authorized { get; set; }
         public DbSet<Admin> Admin { get; set; }
         public DbSet<Region> Region { get; set; }
+        public DbSet<AboutMe> AboutMe { get; set; }
 
     }
 }

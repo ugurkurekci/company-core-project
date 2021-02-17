@@ -8,13 +8,14 @@ namespace Entities.Concrete
 {
     public class Admin : IEntity
     {
-        
+        [Key]
         public int AdminID { get; set; }
-        
+        [RequiredProperty]
         public string Name { get; set; }
-
+        [RequiredProperty]
         public string Passw { get; set; }
 
         public string Mail { get; set; }
     }
+    
 }

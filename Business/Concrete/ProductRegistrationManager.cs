@@ -58,6 +58,7 @@ namespace Business.Concrete
 
         public IResult Update(ProductRegistration productRegistration)
         {
+            _productRegistrationDAL.Update(productRegistration);
             Console.WriteLine("\n" + " PRODUCT NAME: " + productRegistration.NewProductName
                 + "\n" + " PRICE: " + productRegistration.NewProductPrice + "\n" + " QUANTITY: "
                 + productRegistration.NewProductQuantity + "\n" + " IMAGE: " + productRegistration.NewProductImage + "\n" + " Updated to Database....... ");

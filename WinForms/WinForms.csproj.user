@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Forms\AboutMe\AboutMeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Authorizeds\AuthorizedAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Authorizeds\AuthorizedDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Authorizeds\AuthorizedDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Authorizeds\AuthorizedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Authorizeds\AuthorizedUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Customers\CustomersAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Customers\CustomersDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Customers\CustomersDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Customers\CustomersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Customers\CustomersUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Order\OrderAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Order\OrderDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Order\OrderDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Order\OrderUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Product\ProductAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Product\ProductDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Product\ProductDeleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Product\ProductRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Product\ProductUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Order\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
