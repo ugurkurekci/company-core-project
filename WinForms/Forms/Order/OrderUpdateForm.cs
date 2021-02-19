@@ -51,7 +51,7 @@ namespace WinForms.Forms.Order
             {
                 SoldProductManager manager = new SoldProductManager(new EfSoldProductDAL());
                 manager.Update(new Entities.Concrete.SoldProduct
-                {s
+                {
                     BuyerName = namecbx.Text,
                     BuyerSurname = surnamecbx.Text,
                     BuyerProject = productcbx.Text,

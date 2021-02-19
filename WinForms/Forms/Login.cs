@@ -59,47 +59,20 @@ namespace WinForms.Forms
             string password = passwordtxb.Text;
 
             AdminManager manager = new AdminManager(new EfAdminDAL());
-
-
-
-            try
+            var login = manager.GetAdminLogin(username, password).Data;
+            if (login != null)
             {
-                if (username == "     " || password == "    ")
-                {
-                    MessageBox.Show(Messages.ErrorAdded);
-                }
-                else
-                {
-
-                    foreach (var item in manager.GetAll().Data)
-                    {
-
-                        if (username == item.Name && password == item.Passw)
-                        {
-                            MessageBox.Show(Messages.Succes);
-                            Panel panel = new Panel();
-                            panel.Show();
-                            this.Hide();
-                            break;
-                        }
-
-
-
-                    }
-
-
-                }
-
+                MessageBox.Show(Messages.Succes);
+                Panel panel = new Panel();
+                panel.Show();
+                this.Hide();
 
             }
-            catch (Exception)
+            else
             {
+                MessageBox.Show(Messages.ErrorAdded);
 
-                MessageBox.Show(Messages.Error);
             }
-
-
-
 
         }
 

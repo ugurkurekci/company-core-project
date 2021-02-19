@@ -56,6 +56,9 @@ namespace Business.Concrete
             return new SuccessResult(Messages.Succes);
         }
 
-
+        public IDataResult<Admin> GetAdminLogin(string username, string password)
+        {
+            return new SuccessDataResult<Admin>(_adminDal.GetTwo(x => x.Name == username || x.Passw == password));
+        }
     }
 }

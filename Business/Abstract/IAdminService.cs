@@ -13,6 +13,8 @@ namespace Business.Abstract
         IResult Delete(Admin admin);
         IResult Update(Admin admin);
         IDataResult<Admin> GetAdminById(int adminId);
+        IDataResult<Admin> GetAdminLogin(string username, string password);
+
 
 
 
