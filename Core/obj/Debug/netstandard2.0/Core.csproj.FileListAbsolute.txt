@@ -7,3 +7,12 @@ C:\Users\ugurk\Desktop\Company\CompanyProject\Core\obj\Debug\netstandard2.0\Core
 C:\Users\ugurk\Desktop\Company\CompanyProject\Core\obj\Debug\netstandard2.0\Core.dll
 C:\Users\ugurk\Desktop\Company\CompanyProject\Core\obj\Debug\netstandard2.0\Core.pdb
 C:\Users\ugurk\Desktop\Company\CompanyProject\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\Core\obj\Debug\netstandard2.0\Core.pdb

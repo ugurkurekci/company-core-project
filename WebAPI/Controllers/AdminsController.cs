@@ -20,6 +20,8 @@ namespace WebAPI.Controllers
             _adminService = adminService;
         }
 
+       
+
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
@@ -37,6 +39,7 @@ namespace WebAPI.Controllers
             if (result.Success)
             {
                 return Ok(result.Data);
+
             }
             return BadRequest(result);
         }
