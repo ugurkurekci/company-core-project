@@ -30,19 +30,6 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IAdminService, AdminManager>();
-            services.AddSingleton<IAdminDAL, EfAdminDAL>();
-            services.AddSingleton<IAuthorizedService, AuthorizedManager>();
-            services.AddSingleton<IAuthorizedDAL, EfAuthorizedDAL>();
-            services.AddSingleton<ICustomerRegistrationService, CustomerRegistrationManager>();
-            services.AddSingleton<ICustomerRegistrationDAL, EfCustomerRegistrationDAL>();
-            services.AddSingleton<IProductRegistrationService, ProductRegistrationManager>();
-            services.AddSingleton<IProductRegistrationDAL, EfProductRegistrationDAL>();
-            services.AddSingleton<IRegionService, RegionManager>();
-            services.AddSingleton<IRegionDAL, EfRegionDAL>();
-            services.AddSingleton<ISoldProductService, SoldProductManager>();
-            services.AddSingleton<ISoldProductDAL, EfSoldProductDAL>();
-
 
         }
 

@@ -1,8 +1,12 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,12 +23,11 @@ namespace Business.Concrete
             _adminDal = adminDal;
         }
 
+
+        [ValidationAspect(typeof(AdminValidator))]
         public IResult Add(Admin admin)
         {
-            if (admin.Passw.Length < 0)
-            {
-                return new ErrorResult(Messages.Error);
-            }
+
             _adminDal.Add(admin);
 
             return new SuccessResult(Messages.Succes);
@@ -49,6 +52,7 @@ namespace Business.Concrete
             return new SuccessDataResult<Admin>(_adminDal.Get(x => x.AdminID == adminId));
         }
 
+        [ValidationAspect(typeof(AdminValidator))]
         public IResult Update(Admin admin)
         {
 
@@ -58,6 +62,7 @@ namespace Business.Concrete
 
         public IDataResult<Admin> GetAdminLogin(string username, string password)
         {
+
             return new SuccessDataResult<Admin>(_adminDal.GetTwo(x => x.Name == username || x.Passw == password));
         }
     }

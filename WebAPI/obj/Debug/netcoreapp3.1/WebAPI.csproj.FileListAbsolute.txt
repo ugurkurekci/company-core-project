@@ -67,3 +67,9 @@ C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\obj\Debug\netcoreapp3.1\We
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.Views.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll

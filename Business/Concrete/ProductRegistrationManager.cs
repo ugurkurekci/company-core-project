@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -19,29 +21,24 @@ namespace Business.Concrete
             _productRegistrationDAL = productRegistrationDAL;
         }
 
+        [ValidationAspect(typeof(ProductRegistrationValidator))]
         public IResult Add(ProductRegistration productRegistration)
         {
             _productRegistrationDAL.Add(productRegistration);
-            Console.WriteLine("\n" + " PRODUCT NAME: " + productRegistration.NewProductName + "\n"
-                + " PRICE: " + productRegistration.NewProductPrice + "\n" + " QUANTITY: "
-                + productRegistration.NewProductQuantity + "\n" + " IMAGE: " + productRegistration.NewProductImage + "\n"
-                + " Added to Database....... ");
-
             return new SuccessResult(Messages.Succes);
         }
 
         public IResult Delete(ProductRegistration productRegistration)
         {
             _productRegistrationDAL.Delete(productRegistration);
-            Console.WriteLine("\n\n" + " PRODUCT ID: " + productRegistration.NewProductId + "\n" + productRegistration.NewProductName
-                + "\n" + " Deleted to Database.........");
+
             return new SuccessResult(Messages.Succes);
 
         }
 
         public IDataResult<List<ProductRegistration>> GetAll()
         {
-            Console.WriteLine(Messages.Listing + "\n");
+            Console.WriteLine(Messages.Listing);
             return new SuccessDataResult<List<ProductRegistration>>(_productRegistrationDAL.GetAll(), Messages.Succes);
 
         }
@@ -56,12 +53,12 @@ namespace Business.Concrete
             return new SuccessDataResult<ProductRegistration>(_productRegistrationDAL.Get(x => x.NewProductId == productRegistrationId), Messages.Succes);
         }
 
+
+        [ValidationAspect(typeof(ProductRegistrationValidator))]
         public IResult Update(ProductRegistration productRegistration)
         {
             _productRegistrationDAL.Update(productRegistration);
-            Console.WriteLine("\n" + " PRODUCT NAME: " + productRegistration.NewProductName
-                + "\n" + " PRICE: " + productRegistration.NewProductPrice + "\n" + " QUANTITY: "
-                + productRegistration.NewProductQuantity + "\n" + " IMAGE: " + productRegistration.NewProductImage + "\n" + " Updated to Database....... ");
+
             return new SuccessResult(Messages.Succes);
         }
     }

@@ -11,7 +11,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdminsController : ControllerBase
+    public class AdminsController : Controller
     {
         IAdminService _adminService;
 
@@ -28,10 +28,13 @@ namespace WebAPI.Controllers
             var result = _adminService.GetAll();
             if (result.Success)
             {
-                return Ok(result);
+                return Ok(result);               
             }
-            return BadRequest(result);
+            return BadRequest(result);            
+            
         }
+        
+
         [HttpGet("getbyid")]
         public IActionResult GetById(int id)
         {
