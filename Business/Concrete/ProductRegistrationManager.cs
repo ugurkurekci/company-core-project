@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
@@ -21,6 +22,9 @@ namespace Business.Concrete
             _productRegistrationDAL = productRegistrationDAL;
         }
 
+
+
+        [SecuredOperation("product.add,admin")]
         [ValidationAspect(typeof(ProductRegistrationValidator))]
         public IResult Add(ProductRegistration productRegistration)
         {

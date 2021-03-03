@@ -37,26 +37,16 @@ namespace WinForms
             string password = passwordtxb.Text;
             string email = emailtxb.Text;
 
+
             AdminManager manager = new AdminManager(new EfAdminDAL());
-            try
+            manager.Add(new Admin()
             {
-                if (username == "" || password == "" || email == "")
-                {
-                    MessageBox.Show(Messages.ErrorAdded);
-                }
-                else
-                {
-                    manager.Add(new Admin { Name = username, Passw = password, Mail = email });
-                    MessageBox.Show(Messages.SuccessAdded);
+                Name = username,
+                Mail = email,
+                Passw = password
 
+            });
 
-                }
-            }
-            catch
-            {
-
-                MessageBox.Show(Messages.Error);
-            }
         }
 
         private void Register_Load(object sender, EventArgs e)

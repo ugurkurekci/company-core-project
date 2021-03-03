@@ -49,13 +49,7 @@ namespace Core.DataAccess.EntityFramework
             }
         }
 
-        public TEntity GetTwo(Expression<Func<TEntity, bool>> filter = null)
-        {
-            using (TContext context = new TContext())
-            {
-                return context.Set<TEntity>().FirstOrDefault(filter);
-            }
-        }
+        
 
         public void Update(TEntity entity)
         {

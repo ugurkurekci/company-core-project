@@ -20,20 +20,23 @@ namespace WebAPI.Controllers
             _adminService = adminService;
         }
 
-       
+
 
         [HttpGet("getall")]
-        public IActionResult GetAll()
+        public ActionResult GetAll()
         {
             var result = _adminService.GetAll();
             if (result.Success)
             {
-                return Ok(result);               
+
+                return Ok(result);
+
+
             }
-            return BadRequest(result);            
-            
+            return BadRequest(result);
+
         }
-        
+
 
         [HttpGet("getbyid")]
         public IActionResult GetById(int id)

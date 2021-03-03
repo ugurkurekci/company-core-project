@@ -3,12 +3,14 @@ using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 
@@ -22,15 +24,25 @@ namespace Business.Concrete
         {
             _adminDal = adminDal;
         }
-
+        
+        
 
         [ValidationAspect(typeof(AdminValidator))]
         public IResult Add(Admin admin)
         {
 
+           IResult result = BusinessRules.Run(CheckIfAdminNameMailExist(admin.Name, admin.Mail));
+            if (result!=null)
+            {
+                return result;
+            }
+
             _adminDal.Add(admin);
 
-            return new SuccessResult(Messages.Succes);
+            return new SuccessResult(Messages.AdminNameMailAlreadyExists);
+
+            
+
         }
 
         public IResult Delete(Admin admin)
@@ -60,10 +72,24 @@ namespace Business.Concrete
             return new SuccessResult(Messages.Succes);
         }
 
+
         public IDataResult<Admin> GetAdminLogin(string username, string password)
         {
 
-            return new SuccessDataResult<Admin>(_adminDal.GetTwo(x => x.Name == username || x.Passw == password));
+            return new SuccessDataResult<Admin>(_adminDal.Get(p => p.Name == username && p.Passw == password));
+
         }
+        private IResult CheckIfAdminNameMailExist(string username, string mail)
+        {
+            var result = _adminDal.GetAll(p => p.Name == username & p.Mail == mail).Any();
+            if (result)
+            {
+                return new ErrorResult(Messages.AdminNameMailAlreadyExists);
+            }
+            return new SuccessResult();
+        }
+
+
     }
+
 }

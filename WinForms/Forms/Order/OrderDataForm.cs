@@ -83,5 +83,10 @@ namespace WinForms.Forms.Order
             mouse_x = e.X;
             mouse_y = e.Y;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

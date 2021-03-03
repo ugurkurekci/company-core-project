@@ -12,3 +12,17 @@ C:\Users\ugurk\Desktop\Company\CompanyProject\DataAccess\obj\Debug\netstandard2.
 C:\Users\ugurk\Desktop\Company\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\ugurk\Desktop\Company\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\ugurk\Desktop\Company\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

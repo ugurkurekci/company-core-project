@@ -11,7 +11,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductRegistrationsController : ControllerBase
+    public class ProductRegistrationsController : Controller
     {
         IProductRegistrationService _productRegistrationService;
 
