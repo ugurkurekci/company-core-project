@@ -9,6 +9,8 @@ C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -88,5 +90,3 @@ C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\obj\Debug\netcoreapp3.1\
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\obj\Debug\netcoreapp3.1\WinForms.dll
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\obj\Debug\netcoreapp3.1\WinForms.pdb
 C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\obj\Debug\netcoreapp3.1\WinForms.genruntimeconfig.cache
-C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
-C:\Users\ugurk\Documents\GitHub\CompanyProject\WinForms\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
