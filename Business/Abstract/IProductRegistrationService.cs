@@ -15,5 +15,6 @@ namespace Business.Abstract
         IResult Update(ProductRegistration productRegistration);
         IDataResult<ProductRegistration> GetProductRegistrationById(int productRegistrationId);
         IDataResult<List<ProductDetailsDto>> GetProductDetails();
+        IResult AddTransactionalTest(ProductRegistration productRegistration);
     }
 }

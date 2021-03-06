@@ -1,6 +1,8 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -21,12 +23,14 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CustomerRegistrationValidator))]
+        [SecuredOperation("admin")]
+        [CacheRemoveAspect("ICustomerRegistrationService.Get")]
         public IResult Add(CustomerRegistration customerRegistration)
         {
             _customerRegistrationDAL.Add(customerRegistration);
             return new SuccessResult(Messages.Succes);
         }
-
+        [SecuredOperation("admin")]
         public IResult Delete(CustomerRegistration customerRegistration)
         {
             _customerRegistrationDAL.Delete(customerRegistration);
@@ -34,6 +38,8 @@ namespace Business.Concrete
             return new SuccessResult(Messages.Succes);
         }
 
+        [SecuredOperation("admin")]
+        [CacheAspect(duration: 60)]
         public IDataResult<List<CustomerRegistration>> GetAll()
         {
             Console.WriteLine(Messages.Listing);
@@ -41,11 +47,14 @@ namespace Business.Concrete
 
         }
 
+        [SecuredOperation("admin")]
+        [CacheAspect(duration: 10)]
         public IDataResult<CustomerRegistration> GetCustomerRegistrationById(int customerRegistrationId)
         {
             return new SuccessDataResult<CustomerRegistration>(_customerRegistrationDAL.Get(x => x.NewCustomerId == customerRegistrationId));
         }
 
+        [SecuredOperation("admin")]
         [ValidationAspect(typeof(CustomerRegistrationValidator))]
         public IResult Update(CustomerRegistration customerRegistration)
         {

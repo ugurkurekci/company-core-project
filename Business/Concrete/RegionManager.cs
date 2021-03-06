@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -17,38 +20,43 @@ namespace Business.Concrete
         {
             _regionDAL = regionDAL;
         }
-
+        [SecuredOperation("admin")]
+        [CacheRemoveAspect("IRegionService.Get")]
+        
         public IResult Add(Region region)
         {
-            _regionDAL.Add(region);
-            Console.WriteLine("\n" + " Description: " + region.RegionDescription);
+            _regionDAL.Add(region);           
             return new SuccessResult(Messages.Succes);
         }
-
+        [SecuredOperation("admin")]
         public IResult Delete(Region region)
         {
             _regionDAL.Delete(region);
-            Console.WriteLine("\n" + "RegionID: " + region.RegionId);
+           
             return new SuccessResult(Messages.Succes);
 
         }
-
+        [SecuredOperation("admin")]
+        [CacheAspect(duration: 60)]
         public IDataResult<List<Region>> GetAll()
         {
-            Console.WriteLine(Messages.Listing);
+           
             return new SuccessDataResult<List<Region>>( _regionDAL.GetAll(),Messages.Succes);
 
         }
-
+        [SecuredOperation("admin")]
+        [CacheAspect(duration: 10)]
         public IDataResult<Region> GetById(int id)
         {
             return new SuccessDataResult<Region> (_regionDAL.Get(x => x.RegionId == id),Messages.Succes);
         }
 
+        [SecuredOperation("admin")]
+        [CacheRemoveAspect("IRegionService.Get")]
         public IResult Update(Region region)
         {
             _regionDAL.Update(region);
-            Console.WriteLine("\n" + " RegionID: " + region.RegionId + " Description: " + region.RegionDescription);
+            
             return new SuccessResult(Messages.Succes);
         }
     }

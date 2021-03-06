@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -17,6 +18,7 @@ namespace Business.Concrete
             _aboutMeDAL = aboutMeDAL;
         }
 
+        [SecuredOperation("admin")]
         public IDataResult<List<AboutMe>> GetAll()
         {
             return new SuccessDataResult<List<AboutMe>>(_aboutMeDAL.GetAll());

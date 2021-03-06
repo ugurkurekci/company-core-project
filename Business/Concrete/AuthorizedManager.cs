@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -18,37 +21,43 @@ namespace Business.Concrete
             _authorizedDAL = authorizedDAL;
         }
 
+        [SecuredOperation("admin")]
+        [CacheRemoveAspect("IAuthorizedService.Get")]
+        
         public IResult Add(Authorized authorized)
         {
 
 
             _authorizedDAL.Add(authorized);
-            Console.WriteLine("\n" + " NAME: " + authorized.AuthorizedName + "\n" + " SURNAME: " + authorized.AuthorizedSurname + "\n" + " SALARY: " + authorized.AuthorizedSalary + "TL" + "\n" + " START: " + authorized.AuthorizedDateofStart + "\n" + " FİNİSH: " + authorized.AuthorizedDateofOut + "\n" + " Added to Database.......... ");
             return new SuccessResult(Messages.Succes);
         }
 
+        [SecuredOperation("admin")]
         public IResult Delete(Authorized authorized)
         {
             _authorizedDAL.Delete(authorized);
-            Console.WriteLine("\n" + " IdentificationNumber: " + authorized.IdentificationNumber + " Deleted to Database......... ");
             return new SuccessResult(Messages.Succes);
         }
 
+        [SecuredOperation("admin")]
+        [CacheAspect(duration: 60)]
         public IDataResult<List<Authorized>> GetAll()
         {
-            Console.WriteLine(" Listing..................... " + " \n ");
             return new SuccessDataResult<List<Authorized>>(_authorizedDAL.GetAll(), (Messages.Listing));
 
         }
 
+        [SecuredOperation("admin")]
+        [CacheAspect(duration: 10)]
         public IDataResult<Authorized> GetAuthorizedById(int authorizedId)
         {
             return new SuccessDataResult<Authorized>(_authorizedDAL.Get(x => x.IdentificationNumber == authorizedId));
         }
 
+        [SecuredOperation("admin")]
+        [CacheRemoveAspect("IAuthorizedService.Get")]
         public IResult Update(Authorized authorized)
         {
-            Console.WriteLine("\n\n" + " NAME :" + authorized.AuthorizedName + "\n" + " SURNAME: " + authorized.AuthorizedSurname + "\n" + " SALARY: " + authorized.AuthorizedSalary + "TL" + "\n" + " START: " + authorized.AuthorizedDateofStart + "\n" + " FİNİSH: " + authorized.AuthorizedDateofOut + "\n" + " Updated to Database.......... ");
             _authorizedDAL.Update(authorized);
             return new SuccessResult(Messages.Succes);
         }
