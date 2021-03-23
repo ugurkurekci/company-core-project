@@ -46,7 +46,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.Succes);
 
         }
-        [SecuredOperation("admin")]
+        
         [CacheAspect(duration:60)]
         public IDataResult<List<ProductRegistration>> GetAll()
         {
