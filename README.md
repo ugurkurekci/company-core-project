@@ -1,3 +1,5 @@
+<div align="center">
+
 <h3>COMPANY PROJE</h3>
 <p>Katmanlı mimari ile yapılmıştır.SOLID yazılım geliştirme prensiplerine uygun olarak geliştirilmiştir. (Restful WebApi , Repository Design Pattern , Interceptor, Aspectler , Cross Cutting Concerns , Cache, Validate, Authorize Aspect , Autofac , Fluent Validation , JSON Web Token )<p>
 
