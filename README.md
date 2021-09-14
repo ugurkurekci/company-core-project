@@ -16,8 +16,10 @@
  <p>Proje katmanlı mimari ile inşa edilmiştir. SOLID yazılım geliştirme ilkelerine uygun olarak geliştirilmiştir.</p>
     <p>Veritabanı tabloları ilişkilendirilmiştir.</p><br/>
     
-    Bu proje bir şirketin ihtiyaçlarını karşılamak için hazırlanmıştır. Detaya girecek olursak projemiz; bir şirket satış-satın alma içeriğinin kaydını tutar,
-    Şirkette çalışan kişilerin kayıt altına alındığı bir projedir. Bu proje daha da geliştirilebilir. Ön çalışma bu şekilde yapılmıştır.
+    Bu proje bir şirketin ihtiyaçlarını karşılamak için hazırlanmıştır. 
+    Detaya girecek olursak projemiz; bir şirket satış-satın alma içeriğinin kaydını tutar,
+    Şirkette çalışan kişilerin kayıt altına alındığı bir projedir. 
+    Bu proje daha da geliştirilebilir. Ön çalışma bu şekilde yapılmıştır.
     Veritabanına entegre bir takip projesidir.
     
    
@@ -69,8 +71,10 @@
 
   <p>The project was built with a layered architecture. It was developed in accordance with SOLID software development principles.</p>
     
-    This project has been prepared to meet the needs of a company. If we go into detail, our project; a company keeps a record of the sales-buying content,
-    It is a project that records the people working in the company. This project can be further elaborated. This is how the preliminary work was done.
+    This project has been prepared to meet the needs of a company. If we go into detail, our project; 
+    a company keeps a record of the sales-buying content,
+    It is a project that records the people working in the company. This project can be further elaborated. 
+    This is how the preliminary work was done.
     It is a database integrated tracking project.
     
     
