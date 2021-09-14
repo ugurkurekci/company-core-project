@@ -47,7 +47,7 @@
   <p>Projemizi internet ortamına açan api katmanı.</p>
  
   
-  <h3> WinFormsUI</h3>
+  <h3> WinForms</h3>
   <p>Görsel olarak kullanıcıya sunulan bölüm</p>
 
   
@@ -97,7 +97,7 @@
   <h3>WebAPI</h3>
   <p>API layer that opens our project to the internet.</p>
  
- <h3> WinFormsUI</h3>
+ <h3> WinForms</h3>
   <p>Visually presented to the user</p> 
   
 </details>
